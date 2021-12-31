@@ -1,0 +1,160 @@
+const roles = ["Employee", "Super Admin", "Project Manager", "Sales", "HR"];
+
+const roleRights = new Map();
+
+// User Rights
+roleRights.set(roles[0], [
+  "checkIn",
+  "checkOut",
+  "breakStart",
+  "breakEnd",
+  "getAttendenceOfDay",
+  "getImportantDates",
+  "applyForLeave",
+  "requestChanges",
+  "requestChange",
+  "cancelLeave",
+  "getEmployee",
+  "getTodayThought",
+  "getAllBday",
+  "userDashboardLeaves",
+]);
+
+// Admin rights
+roleRights.set(roles[1], [
+  "getAllEmployees",
+  "addEmployee",
+  "getAllRequest",
+  "deleteEmployee",
+  "getImportantDates",
+  "addImportantDates",
+  "getUsersCount",
+  "deactivateEmployee",
+  "getTodayPresentCount",
+  "getTodayReport",
+  "getTodayLeavesCount",
+  "getUserCurrentSession",
+  "getCurrentMonthAttendence",
+  "updateAttendence",
+  "getDeactivatedEmployees",
+  "deleteRequest",
+  "getUserPendingLeaves",
+  "updateEmployee",
+  "uploadImage",
+  "getEmployee",
+  "editEmployee",
+  "approveLeave",
+  "rejectLeave",
+  "getUserLeaves",
+  "updateSeenNotifications",
+  "getEmployeesLeaveHistory",
+  "removeTimeout",
+  "addTeamMembers",
+  "getTeamMembers",
+  "deleteTeamMemebers",
+  "urgentLeave",
+  "getCount",
+  "getRequestChange",
+  "getUnSeenRequestCount",
+  'cancelApprovedLeaves',
+  'addThought',
+  'listThought',
+  'deleteThought',
+  'getThought',
+  'postThought',
+  'getUnCheckedUsers'
+
+]);
+
+// Project manager
+roleRights.set(roles[2], [
+  "getAllEmployees",
+  "getImportantDates",
+  "getAllRequest",
+  "addImportantDates",
+  "getUsersCount",
+  "getTodayPresentCount",
+  "getTodayReport",
+  "getTodayLeavesCount",
+  "getUserCurrentSession",
+  "getCurrentMonthAttendence",
+  "updateAttendence",
+  "deleteRequest",
+  "getUserPendingLeaves",
+  "uploadImage",
+  "getEmployee",
+  "editEmployee",
+  "getCount",
+  "getRequestChange",
+  "getUnSeenRequestCount",
+  'getUnCheckedUsers'
+]);
+
+// Sales
+roleRights.set(roles[3], [
+  "getAllEmployees",
+  "getImportantDates",
+  "getAllRequest",
+  "addImportantDates",
+  "getUsersCount",
+  "getTodayPresentCount",
+  "getTodayReport",
+  "getTodayLeavesCount",
+  "getUserCurrentSession",
+  "getCurrentMonthAttendence",
+  "updateAttendence",
+  "deleteRequest",
+  "getUserPendingLeaves",
+  "getEmployee",
+  "getCount",
+  "getRequestChange",
+  "getUnSeenRequestCount",
+  'getUnCheckedUsers'
+]);
+
+// HR
+roleRights.set(roles[4], [
+  "getAllEmployees",
+  "addEmployee",
+  "deleteEmployee",
+  "getAllRequest",
+  "getImportantDates",
+  "addImportantDates",
+  "getUsersCount",
+  "deactivateEmployee",
+  "getTodayPresentCount",
+  "getTodayReport",
+  "getTodayLeavesCount",
+  "getUserCurrentSession",
+  "getCurrentMonthAttendence",
+  "updateAttendence",
+  "getDeactivatedEmployees",
+  "deleteRequest",
+  "getUserPendingLeaves",
+  "updateEmployee",
+  "uploadImage",
+  "getEmployee",
+  "editEmployee",
+  "approveLeave",
+  "rejectLeave",
+  "getUserLeaves",
+  "updateSeenNotifications",
+  "getEmployeesLeaveHistory",
+  "removeTimeout",
+  "urgentLeave",
+  "getCount",
+  "getRequestChange",
+  "getUnSeenRequestCount",
+  'cancelApprovedLeaves',
+  'addThought',
+  'listThought',
+  'deleteThought',
+  'getThought',
+  'postThought',
+  'getUnCheckedUsers'
+]);
+
+module.exports = {
+  roles,
+  roleRights,
+};

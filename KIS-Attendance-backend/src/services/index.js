@@ -1,0 +1,13 @@
+module.exports.emailService = require('./email.service');
+module.exports.authService = require('./auth.service');
+module.exports.tokenService = require('./token.service');
+module.exports.userService = require('./user.service');
+module.exports.attendenceService = require('./attendence.service');
+module.exports.imageUploadService = require('./aws.s3.imageupload');
+module.exports.importantDatesService = require('./important.dates.service');
+module.exports.requestService = require('./request.changes.service');
+module.exports.rolesService = require('./roles.service');
+module.exports.leavesService = require('./leaves.service');
+module.exports.thoughtService = require('./thought.service');
+module.exports.teamManagementService = require('./team.management.service');
+module.exports.adminService = require('./admin.service');
